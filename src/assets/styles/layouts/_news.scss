@@ -1,0 +1,63 @@
+.mainnews{
+    width: 100vw;
+    font-family: $GenFont;
+    background-image: url('../images/fontground.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    &__contenmai{
+        padding: 2%;
+        text-align: justify;
+    }
+
+    &__blocksite{
+        font-size: 0.9em;
+        font-style: italic;
+        color: #555555;
+        padding-left: 1.5rem;
+        border-left: 0.25rem solid #7E7E7E;
+        margin: 1rem 0;
+        line-height: 1.6;
+        text-align: center;
+
+        &----cite{
+            font-size: 1em;
+            font-style: normal;
+            font-weight: bold;
+            color: #333333;
+            display: block;
+            margin-top: 0.5rem;
+        }
+
+
+    }
+
+    
+}
+
+@media screen and ($tablet){
+    .mainnews{
+        display: flex;
+        justify-content: center;
+        
+        &__contenmai{
+            width: 70%;
+
+        }
+    }
+}
+
+@media screen and ($desktop){
+    .mainnews{
+        display: flex;
+        justify-content: center;
+
+
+        &__contenmai{
+            width: 50%;
+        }
+
+    }
+}

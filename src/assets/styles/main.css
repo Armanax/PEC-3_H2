@@ -1,0 +1,337 @@
+@tailwind base;
+@tailwind components;
+/**
+ * Use this file to import partials.
+ * Do not include SCSS code in this file.
+ */
+/**
+ * Import variables
+ */
+@layer components {
+  .nav__buttom {
+    @apply px-3 py-2 text-white hover:text-gray-300;
+  }
+  .nav__mainbar {
+    @apply container mx-auto flex flex-wrap items-center justify-between px-4 py-3;
+  }
+}
+/**
+ * Import npm dependencies
+ * see: https://v2.parceljs.org/features/module-resolution/
+ * see commented examples below
+ */
+/**
+ * Import layouts
+ * It's a best practice to use a different partial for each page
+ */
+.membersm {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-image: url("../images/fontground.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+}
+.membersm__conteiner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.membersm__title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.membersm__ranks {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.membersm__ranks--player {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: #7F85A3;
+  border-radius: 25px;
+}
+.membersm__ranks--playerpic {
+  width: 40%;
+  height: 150px;
+  margin: 0;
+}
+.membersm__ranks--playerpicimg {
+  border-radius: 25px;
+}
+.membersm__ranks--playerdata {
+  font-size: 0.8rem;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.membersm__ranks--playerelo {
+  background-color: #A3976F;
+  border-radius: 25px;
+  width: 90%;
+}
+.membersm__ranks--playerdescrip {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  height: 90px;
+}
+
+@media screen and ((min-width: 481px) and (max-width: 960px)) {
+  .membersm__conteiner {
+    align-items: center;
+  }
+  .membersm__ranks {
+    width: 70%;
+  }
+  .membersm__ranks--playerelo {
+    border-radius: 3px;
+  }
+  .membersm__ranks--playerpic {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+  }
+  .membersm__ranks--playerpicimg {
+    width: 85%;
+    border-radius: 10px;
+  }
+}
+@media screen and ((min-width: 961px)) {
+  .membersm__conteiner {
+    width: 70%;
+    justify-content: center;
+  }
+  .membersm__ranks {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .membersm__ranks--player {
+    flex-direction: column;
+    width: 30%;
+    margin: 10px;
+  }
+  .membersm__ranks--playerpic {
+    width: 48%;
+    height: 180px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .membersm__ranks--playerdata {
+    width: 92%;
+  }
+  .membersm__ranks--playerelo {
+    border-radius: 5px;
+  }
+  .membersm__ranks--playerdescrip {
+    overflow: auto;
+  }
+}
+.mainnews {
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  background-image: url("../images/fontground.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mainnews__contenmai {
+  padding: 2%;
+  text-align: justify;
+}
+.mainnews__blocksite {
+  font-size: 0.9em;
+  font-style: italic;
+  color: #555555;
+  padding-left: 1.5rem;
+  border-left: 0.25rem solid #7E7E7E;
+  margin: 1rem 0;
+  line-height: 1.6;
+  text-align: center;
+}
+.mainnews__blocksite----cite {
+  font-size: 1em;
+  font-style: normal;
+  font-weight: bold;
+  color: #333333;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+@media screen and ((min-width: 481px) and (max-width: 960px)) {
+  .mainnews {
+    display: flex;
+    justify-content: center;
+  }
+  .mainnews__contenmai {
+    width: 70%;
+  }
+}
+@media screen and ((min-width: 961px)) {
+  .mainnews {
+    display: flex;
+    justify-content: center;
+  }
+  .mainnews__contenmai {
+    width: 50%;
+  }
+}
+/**
+ * Do NOT include anything else in this file!
+ */
+.menu {
+  font-family: "Poppins", sans-serif;
+  width: 100vw;
+}
+
+.footmenu {
+  font-family: "Poppins", sans-serif;
+  width: 100vw;
+  height: 30vh;
+}
+.footmenu__container {
+  background-color: #e9ecef;
+  display: flex;
+  width: 100%;
+}
+.footmenu__container--contact {
+  width: 100%;
+  text-align: center;
+  padding: 3%;
+}
+
+@media screen and ((min-width: 961px)) {
+  .footmenu__container {
+    justify-content: center;
+  }
+  .footmenu__container--contact {
+    width: 60%;
+  }
+}
+.carousel-img {
+  margin-top: 4%;
+  width: 600px;
+  height: 300px;
+}
+
+@media screen and ((min-width: 961px)) {
+  .carousel-img {
+    margin-top: 4%;
+    width: 600px;
+    height: 600px;
+  }
+}
+.spinner-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+img, picture, video, iframe, figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+::-moz-selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+form, input, textarea, select, button, label {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-hyphens: auto;
+          hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+}
+
+table, tr, td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--tipo-principal);
+  color: var(--negro);
+  line-height: 1.4em;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+@tailwind utilities;/*# sourceMappingURL=main.css.map */

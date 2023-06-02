@@ -1,0 +1,19 @@
+$GenFont: 'Poppins', sans-serif;
+$tablet: "(min-width: 481px) and (max-width: 960px)";
+$desktop: "(min-width: 961px)";
+
+
+
+$theme-colors: (
+ "primary": #911828,
+ "secondary": #cfcccc
+);
+
+@layer components {
+    .nav__buttom{
+        @apply px-3 py-2 text-gray-800 hover:text-gray-300;
+    }
+    .nav__mainbar{
+        @apply container mx-auto flex flex-wrap items-center justify-between px-4 py-3;
+    }
+}
